@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="4dp"
+    android:background="#161823"
+    android:orientation="horizontal"
+    android:paddingHorizontal="16dp">
+
+    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:id="@+id/iv_head"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@mipmap/ic_launcher"
+        app:qmui_border_width="0dp"
+        app:qmui_is_circle="true" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        app:qmui_backgroundColor="#23252F"
+        app:qmui_radius="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="喜欢就给个评论支持一下吧~"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+</LinearLayout>

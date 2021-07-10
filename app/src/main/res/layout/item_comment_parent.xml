@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="#161823"
+    android:orientation="horizontal"
+    android:paddingHorizontal="16dp">
+
+    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:id="@+id/iv_head"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@mipmap/ic_launcher"
+        app:qmui_border_width="0dp"
+        app:qmui_is_circle="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="这是昵称"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+                android:id="@+id/ll_label"
+                android:layout_width="28dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                app:qmui_backgroundColor="#23252F"
+                app:qmui_radius="7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="作者"
+                    android:textColor="#CCCCCC"
+                    android:textSize="10sp" />
+
+            </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="中国为什么要斥巨资发展量子科技"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="14分钟前"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_love"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/ic_love" />
+
+        <TextView
+            android:id="@+id/tv_love_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="14"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>
